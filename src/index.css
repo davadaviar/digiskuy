@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+@tailwind base;
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url(/src/assets/fonts/Mona-Sans-MediumWide.woff);
+}
+
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #171926;
+  --text-white: #ffffff
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  font-family: 'IBM Plex Mono';
+  font-size: 20px;
+}
+
+li:hover {
+  cursor: pointer;
+}
