@@ -3,7 +3,7 @@ import { navbar } from '../constants'
 
 const Navbar = () => {
   return (
-    <nav className='navbar w-full flex justify-between items-center px-24 py-10 fixed top-0'>
+    <nav className='navbar w-full flex justify-between items-center px-24 py-10 fixed top-0 z-10'>
         <h3 className='logo font-heading text-[40px]'>Digiskuy</h3>
         <ul className='navlink flex flex-1 gap-8 justify-center'>
             {
