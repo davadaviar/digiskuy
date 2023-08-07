@@ -4,6 +4,7 @@ import AboutUs from './sections/AboutUs';
 import Hero from './sections/Hero';
 import OurServices from './sections/OurServices';
 import OurStack from './sections/OurStack';
+import OurTeam from './sections/OurTeam';
 import OurWorks from './sections/OurWorks';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <OurStack />
         <OurServices />
         <OurWorks />
+        <OurTeam />
       </div>
   )
 }
