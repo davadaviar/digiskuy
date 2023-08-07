@@ -6,12 +6,16 @@ import Tilt from 'react-parallax-tilt';
 const OurServices = () => {
   return (
     <div className='our-services mt-24 px-24'>
-        <h2 className='font-heading text-[64px]'>Services</h2>
+        <h2 className='font-heading text-[64px]'>{services.heading}</h2>
         <div className='service-cards mt-14 flex flex-1 justify-between'>
             {
-                services.map((service) => (
+                services.provides.map((provide) => (
                     <Tilt>
-                        <CardService title={service.title} img={service.img} altText={service.altText}/>
+                        <CardService 
+                            title={provide.title} 
+                            img={provide.img} 
+                            altText={provide.altText}
+                        />
                     </Tilt>
                 ))
             }
