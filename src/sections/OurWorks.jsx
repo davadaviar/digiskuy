@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt';
 
 const OurWorks = () => {
   return (
-    <section className='our-works mt-24 px-24 text-center relative'>
+    <section className='our-works mt-24 px-24 text-center relative' id='4'>
         <h2 className='font-heading text-[64px]'>{ourWorks.heading}</h2>
         <div className='works-container w-3/4 mx-auto mt-14 grid grid-rows-2 grid-cols-2 gap-8'>
             {

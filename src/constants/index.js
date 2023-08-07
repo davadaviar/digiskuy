@@ -17,11 +17,26 @@ export const navbar = {
     name: 'Digiskuy',
     cta: 'Get in Touch',
     links: [
-        'Home',
-        'About Us',
-        'Services',
-        'Works',
-        'Team'
+        {
+            id: 1,
+            name: 'Home'
+        },
+        {
+            id: 2,
+            name: 'About Us'
+        },
+        {
+            id: 3,
+            name: 'Services'
+        },
+        {
+            id: 4,
+            name: 'Works'
+        },
+        {
+            id: 5,
+            name: 'Team'
+        },
     ]
 };
 
@@ -129,10 +144,25 @@ export const footer = {
         }
     ],
     links: [
-        'Home',
-        'About Us',
-        'Services',
-        'Works',
-        'Team'
+        {
+            id: 1,
+            name: 'Home'
+        },
+        {
+            id: 2,
+            name: 'About Us'
+        },
+        {
+            id: 3,
+            name: 'Services'
+        },
+        {
+            id: 4,
+            name: 'Works'
+        },
+        {
+            id: 5,
+            name: 'Team'
+        },
     ]
 }

@@ -9,7 +9,9 @@ const Footer = () => {
             <ul className='footer-link flex gap-8'>
                 {
                     footer.links.map((link) => (
-                        <li className=''>{link}</li>
+                        <li className='text-[16px]'>
+                            <a href={`#${link.id}`}>{link.name}</a>
+                        </li>
                     ))
                 }
             </ul>

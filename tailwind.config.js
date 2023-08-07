@@ -25,6 +25,12 @@ export default {
       },
       animation: {
         'spin-slow': 'spin 10s linear infinite',
+      },
+      screens: {
+        sm: '620px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1600px'
       }
     },
   },

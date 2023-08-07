@@ -5,7 +5,7 @@ import { play } from '../assets/icons'
 
 const AboutUs = () => {
   return (
-    <section className={`about-us -mt-56 px-24`}>
+    <section className={`about-us -mt-56 px-24`} id='2'>
         <div className='video-player w-full h-[640px] mx-auto relative'>
             <img src={videoPlayer} alt='video-player' />
             <img className='w-[100px] h-[100px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow' src={play} alt='play' />

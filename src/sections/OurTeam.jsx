@@ -4,7 +4,7 @@ import { ourTeam } from '../constants'
 
 const OurTeam = () => {
   return (
-    <section className='our-team mt-24 px-24 relative'>
+    <section className='our-team mt-24 px-24 relative' id='5'>
         <div className='team-header flex justify-between items-center'>
             <h2 className='font-heading text-[64px]'>{ourTeam.heading}</h2>
             <p className='w-2/3 justify-end'>{ourTeam.body}</p>

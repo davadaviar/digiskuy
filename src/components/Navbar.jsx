@@ -8,7 +8,9 @@ const Navbar = () => {
         <ul className='navlink flex flex-1 gap-8 justify-center'>
             {
                 navbar.links.map((link) => (
-                    <li className='text-[20px]'>{link}</li>
+                    <li className='text-[20px]'>
+                      <a href={`#${link.id}`}>{link.name}</a>
+                    </li>
                 ))
             }
         </ul>
