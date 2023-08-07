@@ -26,14 +26,17 @@ export const services = [
     {
         title: 'Design',
         img: `${design}`,
+        altText: 'Design'
     },
     {
         title: 'Front End',
         img: `${frontEnd}`,
+        altText: 'Front End'
     },
     {
         title: 'Back End',
         img: `${backEnd}`,
+        altText: 'Back End'
     }
 ];
 
