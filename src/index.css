@@ -15,6 +15,10 @@
   --text-white: #ffffff
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-white);
