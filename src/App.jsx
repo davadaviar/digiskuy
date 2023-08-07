@@ -1,4 +1,3 @@
-import CardService from './components/CardService';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import AboutUs from './sections/AboutUs';
@@ -13,7 +12,7 @@ function App() {
 
   return (
 
-      <div className='relative'>
+      <div>
         <Navbar />
         <Hero />
         <AboutUs />

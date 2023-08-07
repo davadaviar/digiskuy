@@ -1,3 +1,4 @@
+import { instagram, linkedin } from "../assets/icons";
 import { 
     backEnd, 
     design, 
@@ -22,17 +23,17 @@ export const navbar = {
         'Works',
         'Team'
     ]
-}
+};
 
 export const hero = {
     heading: 'Next Generation \nDigital Agency',
     body: 'We bring to life the most complex projects, specialize in online \nbooking systems and the creation of aggregator sites'
-}
+};
 
 export const aboutUs = {
     heading: 'About Us',
     body: 'Digital agency based on Surabaya that will provide the best \nservice to realize your idea through design and technology for \nyour business growth.'
-}
+};
 
 export const services = {
 
@@ -114,3 +115,24 @@ export const ourTeam = {
         }
     ]
 };
+
+export const footer = {
+    name: 'Digiskuy',
+    cta: [
+        {
+            icon: `${linkedin}`,
+            altText: 'Linkedin'
+        },
+        {
+            icon: `${instagram}`,
+            altText: 'Instagram'
+        }
+    ],
+    links: [
+        'Home',
+        'About Us',
+        'Services',
+        'Works',
+        'Team'
+    ]
+}
