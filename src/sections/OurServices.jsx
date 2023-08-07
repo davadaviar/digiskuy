@@ -12,9 +12,7 @@ const OurServices = () => {
                 services.provides.map((provide) => (
                     <Tilt>
                         <CardService 
-                            title={provide.title} 
-                            img={provide.img} 
-                            altText={provide.altText}
+                            {...provide}
                         />
                     </Tilt>
                 ))
