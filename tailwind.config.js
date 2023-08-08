@@ -27,10 +27,12 @@ export default {
         'spin-slow': 'spin 10s linear infinite',
       },
       screens: {
-        sm: '620px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1600px'
+        xs: '480px',
+        ss: '620px',
+        sm: '768px',
+        md: '1060px',
+        lg: '1200px',
+        xl: '1700px'
       }
     },
   },

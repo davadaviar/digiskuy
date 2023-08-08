@@ -5,12 +5,12 @@ import { ornament } from '../assets/images'
 
 const Hero = () => {
   return (
-    <section className={`hero-section ${styles.paddingX} w-full min-h-screen`} id='1'>
+    <section className='hero-section px-6 md:px-24 w-full min-h-screen' id='1'>
         <div className='hero-headline mt-60'>
-            <h1 className='font-heading text-[120px] text-center leading-heading'>{hero.heading}</h1>
-            <p className='text-center leading-body mt-12 w-3/4 mx-auto'>{hero.body}</p>
+            <h1 className='font-heading text-[50px] md:text-[120px] text-center leading-[55px] md:leading-heading'>{hero.heading}</h1>
+            <p className='text-center text-[16px] md:text-[20px] md:leading-body mt-12 w-3/4 mx-auto'>{hero.body}</p>
         </div>
-        <div className='bg-blur w-[570px] h-[570px] bg-primary rounded-full absolute top-36 left-[30%] -z-10 blur-template'></div>
+        <div className='bg-blur w-[400px] h-[400px] md:w-[570px] md:h-[570px] bg-primary rounded-full absolute top-52 left-1/2 -translate-x-1/2 -z-10 blur-[200px] md:blur-template'></div>
     </section>
   )
 }
