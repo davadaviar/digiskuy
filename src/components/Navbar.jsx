@@ -4,10 +4,10 @@ import { menu } from '../assets/icons'
 
 const Navbar = () => {
 
-  const [open, setOpen] = useState('false');
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav className='navbar w-full flex justify-between items-center px-6 py-7 md:px-24 xl:px-40 md:py-10 fixed top-0 z-10'>
+    <nav className='navbar bg-white/10 w-full flex justify-between items-center px-6 py-3 md:px-24 xl:px-40 md:py-3 fixed top-0 z-10'>
         <h3 className='logo font-heading text-[30px] md:text-[40px]'>Digiskuy</h3>
         <ul className='navlink hidden md:flex gap-8'>
             {
@@ -19,7 +19,7 @@ const Navbar = () => {
             }
         </ul>
         <a href='#' className='cta hidden md:block px-5 py-3 bg-primary drop-shadow-normal'>{navbar.cta}</a>
-        <img className='w-[30px] h-[30px] md:hidden' src={menu} alt='menu-icon' />
+        <img onClick={() => setOpen(!open)} className='w-[30px] h-[30px] hover:cursor-pointer md:hidden' src={menu} alt='menu-icon' />
     </nav>
   )
 }

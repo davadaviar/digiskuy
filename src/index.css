@@ -29,3 +29,7 @@ body {
 li:hover {
   cursor: pointer;
 }
+
+.navbar {
+  backdrop-filter: blur(64px);
+}
