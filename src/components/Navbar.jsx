@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { navbar } from '../constants'
 import { menu } from '../assets/icons'
 
 const Navbar = () => {
+
+  const [open, setOpen] = useState('false');
+
   return (
-    <nav className='navbar w-full flex justify-between items-center px-6 py-7 md:px-24 md:py-10 fixed top-0 z-10'>
+    <nav className='navbar w-full flex justify-between items-center px-6 py-7 md:px-24 xl:px-40 md:py-10 fixed top-0 z-10'>
         <h3 className='logo font-heading text-[30px] md:text-[40px]'>Digiskuy</h3>
         <ul className='navlink hidden md:flex gap-8'>
             {
