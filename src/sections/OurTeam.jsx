@@ -4,12 +4,12 @@ import { ourTeam } from '../constants'
 
 const OurTeam = () => {
   return (
-    <section className='our-team mt-24 px-24 relative' id='5'>
-        <div className='team-header flex justify-between items-center'>
-            <h2 className='font-heading text-[64px]'>{ourTeam.heading}</h2>
-            <p className='w-2/3 justify-end'>{ourTeam.body}</p>
+    <section className='our-team mt-12 md:mt-24 px-6 md:px-24 relative' id='5'>
+        <div className='team-header flex flex-col gap-7 md:flex-row md:justify-between md:items-center'>
+            <h2 className='font-heading text-[24px] md:text-[64px]'>{ourTeam.heading}</h2>
+            <p className='text-[16px] md:text-[20px] md:w-2/3 justify-end'>{ourTeam.body}</p>
         </div>
-        <div className='team-container mt-12 grid grid-rows-1 grid-cols-4'>
+        <div className='team-container mt-12 grid gap-7 grid-rows-2 grid-cols-2 md:grid-rows-1 md:grid-cols-4'>
             {
                 ourTeam.team.map((member) => (
                     <Team
