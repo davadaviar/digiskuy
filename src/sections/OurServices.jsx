@@ -8,7 +8,7 @@ const OurServices = () => {
 
     const parallaxEasing = useParallax({
         easing: "easeOutQuad",
-        translateX: [340, -100],
+        translateX: [50, -100],
     });
 
     const parallaxCardEasing = useParallax({

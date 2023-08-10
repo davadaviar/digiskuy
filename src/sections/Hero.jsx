@@ -1,7 +1,5 @@
-import React from 'react'
-import { styles } from '../style'
-import { hero } from '../constants'
-import { ornament } from '../assets/images'
+import React from 'react';
+import { hero } from '../constants';
 
 const Hero = () => {
   return (

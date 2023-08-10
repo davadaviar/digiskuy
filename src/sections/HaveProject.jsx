@@ -6,7 +6,7 @@ const HaveProject = () => {
 
   const parallaxEasingCaption = useParallax({
     easing: 'easeOutQuad',
-    translateX: [100, -100],
+    translateX: [150, -100],
   });
 
   return (
