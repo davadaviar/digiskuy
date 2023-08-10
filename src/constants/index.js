@@ -36,7 +36,7 @@ export const navbar = {
         {
             id: 5,
             name: 'Team'
-        },
+        }
     ]
 };
 
@@ -163,6 +163,6 @@ export const footer = {
         {
             id: 5,
             name: 'Team'
-        },
+        }
     ]
 }

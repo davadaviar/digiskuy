@@ -23,9 +23,6 @@ export default {
       blur: {
         template: '400px'
       },
-      animation: {
-        'spin-slow': 'spin 10s linear infinite',
-      },
       screens: {
         xs: '480px',
         ss: '620px',

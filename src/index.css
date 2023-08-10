@@ -8,6 +8,19 @@
 }
 
 @tailwind components;
+
+.nav-menu {
+  @apply w-full xs:absolute flex flex-col gap-3 md:gap-10 items-center top-0 left-[100%] xs:py-20 slide
+}
+
+.nav-menu.active {
+  @apply w-full xs:absolute flex flex-col gap-3 md:gap-10 items-center top-0 left-0 xs:py-20 bg-[var(--bg-primary)] -z-10 right-0 shadow-2xl slide
+}
+
+.bg-blur {
+  @apply bg-white/20 backdrop-filter backdrop-blur-3xl
+}
+
 @tailwind utilities;
 
 :root {
@@ -32,4 +45,8 @@ li:hover {
 
 .navbar {
   backdrop-filter: blur(64px);
+}
+
+.slide {
+  transition: all ease-in-out 400ms;
 }

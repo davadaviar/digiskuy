@@ -1,25 +1,33 @@
 import React, { useState } from 'react'
 import { navbar } from '../constants'
-import { menu } from '../assets/icons'
+import Button from './Button'
 
 const Navbar = () => {
 
-  const [open, setOpen] = useState(false);
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  
 
   return (
-    <nav className='navbar bg-white/10 w-full flex justify-between items-center px-6 py-3 md:px-24 xl:px-40 md:py-3 fixed top-0 z-10'>
-        <h3 className='logo font-heading text-[30px] md:text-[40px]'>Digiskuy</h3>
-        <ul className='navlink hidden md:flex gap-8'>
-            {
-                navbar.links.map((link) => (
-                    <li className='text-[20px]'>
-                      <a href={`#${link.id}`}>{link.name}</a>
-                    </li>
-                ))
-            }
+    <nav className='navbar w-full px-6 md:px-24 py-3 md:py-5 flex fixed left-0 top-0 z-30'>
+      <div className='nav-container w-full flex justify-between items-center'>
+        <div className='logo font-heading text-[30px]'>
+          Digiskuy
+        </div>
+        <div className='hamburger' onClick={handleClick}>
+          <i className={click ? 'fa-regular fa-circle-xmark text-[30px]' : 'fa-solid fa-bars text-[30px]'}></i>
+        </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          {
+            navbar.links.map((link) => (
+              <li className='nav-item hover:cursor-pointer hover:text-primary'>
+                <a href={`#${link.id}`}>{link.name}</a>
+              </li>
+            ))
+          }
         </ul>
-        <a href='#' className='cta hidden md:block px-5 py-3 bg-primary drop-shadow-normal'>{navbar.cta}</a>
-        <img onClick={() => setOpen(!open)} className='w-[30px] h-[30px] hover:cursor-pointer md:hidden' src={menu} alt='menu-icon' />
+      </div>
     </nav>
   )
 }
