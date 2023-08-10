@@ -12,7 +12,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-parallax-tilt": "^1.7.157"
+    "react-parallax-tilt": "^1.7.157",
+    "react-scroll-parallax": "^3.4.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
